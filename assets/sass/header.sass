@@ -1,0 +1,107 @@
+@use 'variables'
+
+.container
+    position: relative
+    z-index: 5
+    max-width: 92rem
+    margin: 0 auto
+    padding: 0 4rem
+    
+header
+    width: 100%
+    background: variables.$light-three
+    overflow: hidden
+
+    nav
+        width: 100%
+        position: relative
+        z-index: 50
+
+        .container
+            display: flex
+            justify-content: space-between
+            height: variables.$nav-container-height
+            align-items: center
+
+            .logo
+                width: 80px
+                display: flex
+                align-items: center
+            
+            .links
+                ul
+                    display: flex
+                a
+                    display: inline-block
+                    padding: .9rem 1.2rem
+                    color: variables.$dark-one
+                    font-size: 1.05rem
+                    text-transform: uppercase
+                    font-weight: 500
+                    line-height: 1
+                    transition: .3s
+
+                    &:hover
+                        color: variables.$main-color
+
+                .active
+                    background: variables.$main-color
+                    color: variables.$light-one
+                    border-radius: 2rem
+                    font-size: 1rem
+                    padding: .9rem 2.1rem
+                    margin-left: 1rem
+                    // opacity: .7
+                    
+                    &:hover
+                        color: variables.$light-one
+                        // background: #6b44e0
+                        // opacity: 1
+                        filter: saturate(80%)
+    
+    .header-content
+        .grid-2
+            display: grid
+            grid-template-columns: 2.3fr 3.5fr
+            align-items: center
+            justify-content: center
+            height: calc((100vh) - (variables.$nav-container-height) )                  
+            padding-bottom: 2.5rem
+            text-align: left
+
+        .container
+            .column-1
+                margin-right: 1.5rem
+                .header-title
+                    font-size: 3.8rem
+                    line-height: 0.8
+                    coloe: variables.$dark-one
+                .text
+                    font-size: 1.25rem
+                    color: variables.$dark-two
+                    line-height: 1.6
+                    margin: 2.15rem 0
+                .btn
+                    display: inline-block
+                    padding: .85rem 2rem
+                    background: variables.$main-color
+                    color: variables.$light-one
+                    border-radius: 2rem
+                    font-size: 1.05rem
+                    text-transform: uppercase
+                    font-weight: 500
+                    transition: .3s
+                    &:hover
+                        filter: saturate(80%)
+            .column-2
+                margin-left: 1.5rem
+            .image
+                display: flex
+                align-items: center
+                justify-content: right
+                .img-element
+                    max-width: 600px
+                    // border: 1px solid black
+                                            
+
+
