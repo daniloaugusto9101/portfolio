@@ -1,0 +1,66 @@
+@use 'variables'
+
+.about
+    overflow: hidden
+    max-width: variables.$max-width
+    margin: 0 auto
+    padding: 0 20px
+    // border: 1px solid black
+
+
+    &__header
+        // background: red
+        text-align: center
+        margin: 4.5rem 0 4.5rem 0
+    
+    &__title
+        display: inline-block
+        padding-bottom: 1rem
+        line-height: 1
+        font-size: 2.8rem
+        position: relative
+        margin-bottom: .6rem
+
+        &:before
+            content: attr(data-title)
+            display: block
+            margin-bottom: .4rem
+            color: variables.$main-color
+            font-size: 1.15rem
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 3px
+
+        &:after
+            content: ""
+            position: absolute
+            width: 90px
+            height: 5px
+            border-radius: 3px
+            background: variables.$main-color
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    
+    .container
+        max-width: variables.$max-width
+        margin: 0 auto
+        padding: 0 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        // border: 1px solid black
+        gap: 10px
+
+        .column-1
+            flex: 1 0 350px
+
+        .column-2
+            .skills
+                margin: 1.5rem 0 2.5rem 
+                .skill
+                    margin: 1rem 0
+                    &__title
+                        color: #555
+                        font-weight: 600
+                        margin-bottom: .3rem

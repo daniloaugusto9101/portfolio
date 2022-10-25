@@ -24,59 +24,104 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <div class="overlay overlay-lg">
-                <img src="" alt="">
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="logo">
+                <img src="./assets/img/logo.png" alt="Logo do site" class="logo__img">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Resume</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link menu__link--active">Hire me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="conlumn-1">
+                <h1 class="home__title">I'm Danilo Augusto</h1>
+                <p class="home__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus soluta
+                    ipsam sunt reprehenderit
+                    illum quia, similique nemo nulla odit, in repellat unde, praesentium inventore sint? Ab asperiores
+                    sequi commodi! Unde!</p>
+                <button>Donwload CV</button>
             </div>
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/img/logo.png" alt="Logo do Site">
+            <div class="conlumn-2">
+                <img src="./assets/img/person5.png" alt="Profile photo" class="home__img">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+
+        <div class="about__header">
+            <h3 class="about__title" data-title="Who Am i">About Me</h3>
+        </div>
+
+        <div class="container">
+            <div class="column-1 image">
+                <img src="./assets/img/person5.png" alt="">
+            </div>
+            <div class="column-2">
+                <h3 class="title-sm">Hello, I'm</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt earum explicabo facere
+                    sit deserunt esse fuga reiciendis, cumque aperiam. Voluptatibus modi dolore pariatur non voluptatum
+                    praesentium exercitationem blanditiis maxime.
+                </p>
+                <div class="skills">
+                    <div class="skill html">
+                        <h3 class="skill__title">HTML</h3>
+                        <div class="skill__bar">
+                            <div class="skill__pregress"></div>
+                        </div>
                     </div>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#" class="active">Hire me</a>
-                            </li>
-                        </ul>
+                    <div class="skill css">
+                        <h3 class="skill__title">CSS</h3>
+                        <div class="skill__bar">
+                            <div class="kill__pregress"></div>
+                        </div>
+                    </div>
+                    <div class="skill js">
+                        <h3 class="skill__title">Javascript</h3>
+                        <div class="skill__bar">
+                            <div class="kill__pregress"></div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <div class="header-content">
-                <div class="container grid-2">
-                    <div class="column-1">
-                        <h1 class="header-title">Danilo Augusto</h1>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus amet facilis accusantium optio corrupti, est animi atque sint alias maxime molestias officia magnam ex ad nostrum et, unde deserunt.
-                        </p>
-                        <a href="#" class="btn">Download CV</a>
-                    </div>
-                    <div class="column-2 image">
-                        <img src="./assets/img/person.png" class="img-element">
-                    </div>
-                </div>
+                <a href="#" class="btn">Read more</a>
             </div>
-        </header>
-    </main>
+
+        </div>
+    </section>
+
+    <section class="portfolio section">
+        <div class="background-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h3 class="title" data-title="My Works">Portfolio</h3>
+            </div>
+            <div class="section-body"></div>
+        </div>
+    </section>
+
 </body>
 
 </html>
