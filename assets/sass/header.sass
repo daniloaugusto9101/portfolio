@@ -1,47 +1,45 @@
 @use 'variables'
+@import "container"
+@import "btn"
 
 header
     z-index: 99999
     width: 100%
     position: fixed
     top: 0
-    left: 0
-    backdrop-filter: blur(20px)
-    transition: .6s ease
+    left: 0    
+    // border: 1px solid black
 
     .nav-bar
+        // background: blue
         position: relative
-        height: variables.$nav-container-height
-        max-width: variables.$max-width
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin: 0 auto
-        padding: 0 20px
-        transition: .6 ease
+        width: 100%
+        backdrop-filter: blur(20px)
 
-        .logo
-            &__img
-                width: 50px
+        .container
+            @include container
+            border: 1px solid black
 
-        .menu
-            display: flex
-            gap: 20px
+            .logo
+                &__img
+                    width: 50px
 
-            &__link
-                color: variables.$main-color
-                padding: 10px
-                transition: .6s ease
-                font-weight: 500
-                font-size: variables.$normal-font-size               
-                &:hover
+            .menu
+                display: flex
+                gap: 20px
+
+                &__link
                     color: variables.$dark-one
+                    padding: 10px
+                    transition: .6s ease
+                    font-weight: 500
+                    font-size: variables.$normal-font-size  
+                    &:hover
+                        color: variables.$main-color
+                    &--btn   
+                        @include btn(10px, 30px)
 
-                &--active
-                    background-color: variables.$main-color
-                    color: variables.$light-one
-                    border-radius: 30px
-                    padding: 10px 30px
+                        
 
 
 
