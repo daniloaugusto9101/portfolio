@@ -3,7 +3,7 @@
 @import "btn"
 
 header
-    z-index: 9999
+    z-index: 99999
     width: 100%
     position: fixed
     top: 0
@@ -18,7 +18,8 @@ header
 
         .container
             @include container
-            border: 1px solid black
+            height: variables.$nav-container-height
+            // border: 1px solid black
 
             .logo
                 &__img
@@ -36,8 +37,8 @@ header
                     font-size: variables.$normal-font-size  
                     &:hover
                         color: variables.$main-color
-                    &--btn   
-                        @include btn(10px, 30px)
+                .btn   
+                    @include btn(10px, 30px)
 
                         
 

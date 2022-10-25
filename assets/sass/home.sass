@@ -1,4 +1,6 @@
 @use 'variables'
+@import "container"
+@import "btn"
 
 .home
     padding: 100px 0
@@ -9,22 +11,27 @@
     &__title
         font-size: 50px
         color: variables.$main-color
-    
+
     &__description
         font-size: 20px
-
-    &__img
-        // border: 1px solid blac
+        
+    .btn
+        @include btn(10px, 50px)
 
     .container
-        max-width: variables.$max-width
-        margin: 0 auto
-        padding: 0 20px
-        display: flex
-        height: calc( 100vh - variables.$nav-container-height)
-        align-items: center
-        justify-content: space-between
-        // border: 1px solid black
+        @include container
+        border: 1px solid black
+        height: calc(100vh - variables.$nav-container-height)
 
         .conlumn-1
-            flex: 1 0 50px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 20px
+        .conlumn-2
+            flex: 1 0 400px
+
+
+
+
+    
