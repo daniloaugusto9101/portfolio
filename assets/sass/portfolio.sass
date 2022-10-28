@@ -1,6 +1,16 @@
 @use 'variables'
+@import "container"
 
 .portfolio
     position: relative
     width: 100%
-    // background-color: variables.$main-color
+    min-height: 1200px
+    padding: 30px
+    .container
+        @include container
+        border: 1px solid black
+        .filter
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: red
