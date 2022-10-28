@@ -1,16 +1,59 @@
 @use 'variables'
 @import "container"
+@import "btn"
 
 .portfolio
     position: relative
     width: 100%
     min-height: 1200px
     padding: 30px
+    margin-top: 40px
+    .background-bg
+        position: absolute
+        background-color: variables.$main-color
+        width: 100%
+        min-height: 350px
+        top: 0
+        left: 0
+    .division
+        &__title
+            color: variables.$light-one
+            &::before
+                color: variables.$light-one
+            &::after
+                background-color: variables.$light-one
+
+
     .container
         @include container
-        border: 1px solid black
-        .filter
-            display: flex
-            align-items: center
-            justify-content: center
-            background-color: red
+        // border: 1px solid black
+        .imgs
+            z-index: 99998
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            // background-color: red
+            gap: 30px
+            width: 100%
+            // border: 1px solid black
+            .img
+                // width: 300px
+                border-radius: 10px
+                // border: 2px solid black
+
+        // .filter
+        //     width: 100%
+        //     display: flex
+        //     align-items: center
+        //     justify-content: center
+        //     z-index: 99998
+        //     gap: 10px
+        //     // background-color: red
+        //     .btn
+        //         @include btn(10px, 30px)
+        //         // background-color: variables.$main-color
+        //         // color: variables.$light-one
+        //         &:hover
+        //             color: variables.$main-color
+        //             background: variables.$light-one
+
+
