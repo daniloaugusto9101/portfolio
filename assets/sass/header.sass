@@ -2,47 +2,44 @@
 @import "container"
 @import "btn"
 
+// Este container é usado em cada parte do site, ele possui margens, centraliza conteudo padronizadas
+.container
+    @include container
+
 header
     z-index: 99999
     width: 100%
     position: fixed
     top: 0
-    left: 0    
-    // border: 1px solid black
+    left: 0
+    border: 1px solid black
 
     .nav-bar
-        // background: blue
-        position: relative
+        background: blue
         width: 100%
         backdrop-filter: blur(20px)
 
         .container
-            @include container
+            // @include container
             height: variables.$nav-container-height
-            // border: 1px solid black
 
             .logo
-                &__img
-                    width: 50px
+                &__text
+                    font-size: 2rem
+                    color: variables.$dark-one
 
             .menu
                 display: flex
                 gap: 20px
+                flex-wrap: wrap
 
                 &__link
                     color: variables.$dark-one
                     padding: 10px
                     transition: .6s ease
                     font-weight: 500
-                    font-size: variables.$normal-font-size  
+                    font-size: variables.$normal-font-size
                     &:hover
                         color: variables.$main-color
-                .btn   
+                .btn
                     @include btn(10px, 30px)
-
-                        
-
-
-
-
-        
