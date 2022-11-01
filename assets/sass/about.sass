@@ -1,26 +1,22 @@
 @use 'variables'
 @import "container"
-@import "division"
 @import "btn"
-
-.division
-    @include division()
 
 
 .about
-    overflow: hidden
-    max-width: variables.$max-width
-    margin: 0 auto
-    padding: 0 20px
+    // background-color: red
+    width: 100%
     // border: 1px solid black
+    margin-bottom: 6rem
     
-    .container
-        // @include container
-
+    &__container
         .column-1
-            flex: 1 0 400px
+            // border: 1px solid black
+            flex: 1 0 35%
 
         .column-2
+            // border: 1px solid black
+            flex: 1 0 65%
             .title-sm
                 // font-size: 3rem
                 margin-bottom: 1rem
@@ -57,6 +53,3 @@
                         width: 30%
                     .sass
                         width: 70%
-                    
-            .btn
-                @include btn(10px, 35px)

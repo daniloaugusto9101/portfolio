@@ -1,10 +1,16 @@
 @use 'variables'
 @import "container"
+@import "division"
 @import "btn"
 
 // Este container é usado em cada parte do site, ele possui margens, centraliza conteudo padronizadas
 .container
     @include container
+
+// Esta divisao é usado em cada parte do site, possui letras e formatos personlizados
+.division
+    @include division
+
 
 header
     z-index: 99999
@@ -12,15 +18,14 @@ header
     position: fixed
     top: 0
     left: 0
-    border: 1px solid black
+    // border: 1px solid black
 
     .nav-bar
-        background: blue
+        // background: blue
         width: 100%
         backdrop-filter: blur(20px)
 
-        .container
-            // @include container
+        .nav-bar__container
             height: variables.$nav-container-height
 
             .logo
