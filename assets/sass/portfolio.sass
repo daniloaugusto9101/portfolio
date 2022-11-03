@@ -5,12 +5,8 @@
 .portfolio
     position: relative
     width: 100%
-    // background-color: red
-    // border: 1px solid black
     margin-bottom: 6rem
-    // min-height: 1200px
     padding-top: 3rem
-    // margin-top: 40px
     .background-bg
         position: absolute
         background-color: variables.$main-color
@@ -29,21 +25,21 @@
                 background-color: variables.$light-one
 
 
-    .container
-        // @include container
+.container
+    // @include container
+    // border: 1px solid black
+    .imgs
+        z-index: 99998
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        // background-color: red
+        gap: 30px
+        width: 100%
         // border: 1px solid black
-        .imgs
-            z-index: 99998
-            display: grid
-            grid-template-columns: repeat(3, 1fr)
-            // background-color: red
-            gap: 30px
-            width: 100%
-            // border: 1px solid black
-            .img
-                // width: 300px
-                border-radius: 10px
-                // border: 2px solid black
+        .img
+            // width: 300px
+            border-radius: 10px
+            // border: 2px solid black
 
         // .filter
         //     width: 100%
@@ -61,4 +57,9 @@
         //             color: variables.$main-color
         //             background: variables.$light-one
 
+@media (max-width: 420px)
+    .imgs
+        background-color: red
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
 

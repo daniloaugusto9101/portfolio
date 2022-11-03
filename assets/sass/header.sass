@@ -20,31 +20,42 @@ header
     left: 0
     // border: 1px solid black
 
-    .nav-bar
-        // background: blue
-        width: 100%
-        backdrop-filter: blur(20px)
+.nav-bar
+    // background: blue
+    width: 100%
+    backdrop-filter: blur(20px)
 
-        .nav-bar__container
-            height: variables.$nav-container-height
+    &__container
+        height: variables.$nav-container-height
+        // border: 2px solid black
 
-            .logo
-                &__text
-                    font-size: 2rem
-                    color: variables.$dark-one
+.logo
+    &__text
+        font-size: 2rem
+        color: variables.$dark-one
 
-            .menu
-                display: flex
-                gap: 20px
-                flex-wrap: wrap
+.menu
+    display: flex
+    gap: 20px
+    flex-wrap: wrap
 
-                &__link
-                    color: variables.$dark-one
-                    padding: 10px
-                    transition: .6s ease
-                    font-weight: 500
-                    font-size: variables.$normal-font-size
-                    &:hover
-                        color: variables.$main-color
-                .btn
-                    @include btn(10px, 30px)
+    &__link
+        color: variables.$dark-one
+        padding: 10px
+        transition: .6s ease
+        font-weight: 500
+        font-size: variables.$normal-font-size
+        &:hover
+            color: variables.$main-color
+    .btn
+        @include btn(10px, 30px)
+
+@media (max-width: 420px)
+    .menu
+        display: none
+
+
+
+
+
+
