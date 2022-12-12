@@ -1,7 +1,10 @@
 const menu = document.querySelectorAll('.menu a[href^="#"]')
+const btn = document.querySelector('.menu-mobile')
+const navbar = document.querySelector('.nav-bar__container')
 
 menu.forEach(item =>{
     item.addEventListener('click', toScroll)
+    item.classList.remove('btn')
 })
 
 function toScroll(event){
@@ -17,3 +20,7 @@ function toScroll(event){
         behavior: "smooth"
     })
 }
+
+btn.addEventListener('click', function(){
+    navbar.classList.toggle('active')
+})
