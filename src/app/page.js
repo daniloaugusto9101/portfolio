@@ -1,3 +1,9 @@
+import SectionHeader from "@/components/SectionHeader";
+
 export default function Home() {
-  return <main>Página inicial</main>;
+  return (
+    <main>
+      <SectionHeader />
+    </main>
+  );
 }

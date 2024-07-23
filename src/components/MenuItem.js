@@ -9,7 +9,7 @@ export default function MenuItem({ href, children, onClick }) {
         onClick={onClick}
       >
         {children}
-        <span className="absolute bottom-0 right-0 w-0 h-1 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+        <span className="absolute bottom-0 right-0 w-0 h-1 bg-customPurple-500 transition-all duration-300 group-hover:w-full"></span>
       </Link>
     </li>
   );

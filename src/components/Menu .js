@@ -7,10 +7,6 @@ import React from "react";
 const menuItem = [
   {
     href: "/",
-    text: "Início",
-  },
-  {
-    href: "/",
     text: "Projetos",
   },
   {
@@ -34,12 +30,12 @@ export default function Menu() {
     setIsOpen(false); // Fecha o menu ao clicar em um item
   };
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="max-w-7xl m-auto flex items-center justify-between p-4">
       {/* Logo */}
       <div>
         <Link href="/" title="Página inicial">
           <Image
-            src="/images/logo.png"
+            src="logo.svg"
             alt="Logo do Portfolio de Danilo Augusto Pereira"
             width={50}
             height={50}
