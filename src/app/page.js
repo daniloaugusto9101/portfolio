@@ -1,3 +1,4 @@
+import Recommendation from '@/components/Recommendation';
 import SectionHeader from '@/components/SectionHeader';
 import SectionProjects from '@/components/SectionProjects';
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <SectionHeader />
       <SectionProjects />
+      <Recommendation />
     </main>
   );
 }
