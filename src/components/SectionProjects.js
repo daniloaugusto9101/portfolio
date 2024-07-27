@@ -26,7 +26,7 @@ const projects = [
 ];
 export default function SectionProjects() {
   return (
-    <section className="m-auto max-w-7xl p-4">
+    <section className="m-auto mb-44 max-w-7xl p-4">
       <div className="relative mb-28 inline-block w-full text-center">
         <h2 className="text-5xl uppercase">Projetos</h2>
         <span className="absolute left-1/2 mt-2 h-1.5 w-16 -translate-x-1/2 transform rounded-md bg-customPurple-500"></span>

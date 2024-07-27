@@ -5,14 +5,14 @@ const hardSkillList = ['ReactJS', 'NextJS', 'NodeJS', 'API RESTful '];
 
 export default function SectionHeader() {
   return (
-    <section className="m-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-10 p-4 md:mt-20 md:flex-row">
+    <section className="m-auto mb-40 flex max-w-7xl flex-col-reverse items-center justify-between gap-10 p-4 md:mt-20 md:flex-row">
       <div className="flex flex-col gap-4 md:w-2/3">
         <h1 className="text-center text-4xl font-bold text-customPurple-500 md:text-left md:text-6xl">
           Danilo Augusto
         </h1>
         <p className="text-md text-center md:text-left md:text-2xl">
           Olá, seja bem-vindo ao meu portfólio, eu me chamo Danilo, sou
-          <strong className="font-semibold"> Software Developer </strong> e Pós Graduado em Desenvolvimento Full Satack
+          <strong className="font-semibold"> Software Developer </strong> e Pós Graduado em Desenvolvimento Full Stack
           na PUC-Minas.
         </p>
         <p className="text-center md:text-left">
