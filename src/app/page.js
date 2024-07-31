@@ -1,4 +1,5 @@
 import Recommendation from '@/components/Recommendation';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 import SectionHeader from '@/components/SectionHeader';
 import SectionProjects from '@/components/SectionProjects';
 
@@ -7,7 +8,8 @@ export default function Home() {
     <main>
       <SectionHeader />
       <SectionProjects />
-      <Recommendation />
+      {/* <Recommendation /> */}
+      <ScrollToTopButton />
     </main>
   );
 }

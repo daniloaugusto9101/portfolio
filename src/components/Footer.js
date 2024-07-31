@@ -3,13 +3,13 @@ import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="py-20">
+    <footer className="bg-gray-100 py-20" id="contatos">
       <div className="container mx-auto flex flex-col items-center">
         <div className="text-center">
           <h2 className="text-lg font-bold">Contatos</h2>
           <p>Email: danilloagt@gmail.com</p>
         </div>
-        <div className="flex">
+        <div className="flex space-x-2">
           <a
             href="https://www.linkedin.com/in/daniloaugusto9101/"
             target="_blank"

@@ -3,18 +3,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import MenuItem from './MenuItem';
 import React from 'react';
+import { FaDownload } from 'react-icons/fa'; // Importa o ícone de download
 
 const menuItem = [
   {
-    href: '/',
+    href: 'projetos',
     text: 'Projetos',
   },
+  // {
+  //   href: '#recomendacoes',
+  //   text: 'Recomendações',
+  // },
   {
-    href: '/',
-    text: 'Recomendações',
-  },
-  {
-    href: '/',
+    href: 'contatos',
     text: 'Contatos',
   },
 ];
@@ -27,8 +28,19 @@ export default function Menu() {
   };
 
   const handleMenuItemClick = () => {
+    console.log('Clucoi mobile');
     setIsOpen(false); // Fecha o menu ao clicar em um item
   };
+
+  const handleScroll = (e, sectionId) => {
+    console.log('clicou scrol id: ' + sectionId);
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="m-auto flex max-w-7xl items-center justify-between p-4">
       {/* Logo */}
@@ -50,12 +62,23 @@ export default function Menu() {
       </button>
 
       {/* Desktop Menu */}
-      <ul className="hidden space-x-6 lg:flex">
+      <ul className="hidden items-center space-x-6 lg:flex">
         {menuItem.map((item, index) => (
-          <MenuItem key={index} href={item.href}>
+          <MenuItem key={index} href={item.href} onClick={(e) => handleScroll(e, item.href)}>
             {item.text}
           </MenuItem>
         ))}
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1n_C74Xar5k2OEt9G8y0yOoZB1y1Z5PXE/edit?usp=sharing&ouid=114784739266491652751&rtpof=true&sd=true" // Substitua pelo caminho do seu arquivo de currículo
+            target="_blank" // Abre o link em uma nova guia
+            rel="noopener noreferrer" // Adiciona segurança ao link
+            className="flex items-center justify-center rounded-lg bg-customPurple-500 px-4 py-2 text-white transition-colors duration-300 hover:bg-customPurple-600"
+          >
+            <FaDownload className="mr-2" /> {/* Ícone de download */}
+            Resume
+          </a>
+        </li>
       </ul>
 
       {/* Mobile Menu */}
@@ -70,6 +93,17 @@ export default function Menu() {
               {item.text}
             </MenuItem>
           ))}
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1n_C74Xar5k2OEt9G8y0yOoZB1y1Z5PXE/edit?usp=sharing&ouid=114784739266491652751&rtpof=true&sd=true" // Substitua pelo caminho do seu arquivo de currículo
+              target="_blank" // Abre o link em uma nova guia
+              rel="noopener noreferrer" // Adiciona segurança ao link
+              className="flex items-center justify-center rounded-lg bg-customPurple-500 px-4 py-2 text-white transition-colors duration-300 hover:bg-customPurple-600"
+            >
+              <FaDownload className="mr-2" />
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
