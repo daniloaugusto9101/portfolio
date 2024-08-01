@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import './globals.css';
+import './styles/scrollbar.css';
 import Menu from '@/components/Menu ';
 import Footer from '@/components/Footer';
 

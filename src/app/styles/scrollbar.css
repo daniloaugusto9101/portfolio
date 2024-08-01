@@ -1,0 +1,20 @@
+/* Estilos para navegadores baseados em WebKit */
+::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do trilho */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #a380ff; /* Cor da parte rolável da barra */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8460ff; /* Cor da parte rolável ao passar o mouse */
+  }
+  
+
+
