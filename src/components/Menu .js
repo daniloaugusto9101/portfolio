@@ -65,7 +65,7 @@ export default function Menu() {
 
       <div className="m-auto flex max-w-7xl items-center justify-between">
         <Link href="/" style={{ animationDelay: '0.2s' }} className="fade-in-up">
-          <p className="bg-customPurple-500 px-1 py-2 text-2xl font-bold text-white">DAP</p>
+          <p className="rounded-sm bg-customPurple-500 px-1 py-2 text-2xl font-bold text-white">DAP</p>
         </Link>
 
         {/* Menu Icon */}
