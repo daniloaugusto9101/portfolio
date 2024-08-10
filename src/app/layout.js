@@ -8,12 +8,12 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Danilo Augusto Pereira - Software Developer',
+  title: 'Danilo Augusto Pereira - Desenvolvedor Full Stack',
   description:
     'Bem-vindo ao portfólio de Danilo Augusto Pereira, um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Explore meus projetos, conheça minhas habilidades e entre em contato.',
   author: {
     name: 'Danilo Augusto Pereira',
-    occupation: 'Software Developer',
+    occupation: 'Desenvolvedor Full Stack',
     location: 'São Paulo, Brasil',
     email: 'danilloagt@gmail.com',
     linkedin: 'https://www.linkedin.com/in/daniloaugusto9101/',
