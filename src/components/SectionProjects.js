@@ -17,7 +17,7 @@ const projects = [
       'CI/CD',
       'DevOps',
     ],
-    site: 'https:assem.com.br',
+    site: 'https://assem.com.br',
     github: '',
     img: '/images/site-assem.gif',
     imgAlt: 'Imagem teste',
