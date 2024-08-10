@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+
+
+/* Left to Right */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px); /* Começa deslocado para a esquerda */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move para a posição final */
+    }
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Começa deslocado para a esquerda */
+    animation: fadeInLeft 0.5s ease-out forwards;
+  }
+
+  /*Right to Left  */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px); /* Começa deslocado para a direita */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move para a posição final */
+    }
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(20px); /* Começa deslocado para a direita */
+    animation: fadeInRight 0.5s ease-out forwards;
+  }
+  
